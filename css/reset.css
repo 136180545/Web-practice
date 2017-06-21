@@ -1,0 +1,35 @@
+
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, input, form, a, p, textarea {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+ol, ul, li {
+	list-style: none; /*去掉列表前面的点号*/
+}
+
+a {
+	text-decoration: none; /*去掉链接下划线*/
+	display: block; /*设为块级元素*/
+}
+
+img {
+	border: none;
+	display: block; 
+	/*display：block；比较常用于<a><span>这两个标签——因为这两个标签非块元素，
+	如果不用display：block定义一下，那么定义width、height等和长宽相关的css属性时会发现完全不生效*/
+}
+
+.clearfloat {
+	zoom: 1;
+}
+
+.clearfloat:after {
+	display: block;
+	clear: both;
+	content: "";
+	visibility: hidden;
+	height: 0;
+}
+/*原理：尾部放一个块级元素，左右清除浮动，就可以把盒子内部撑开，内容不设置东西，将元素隐藏，但是在网页中该占的位置还是占着，高度设为0*/

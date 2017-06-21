@@ -1,0 +1,66 @@
+
+.public-container {
+	position: relative;
+	margin: 0 auto;
+	width: 1100px;
+}
+
+
+/*头部*/
+.public-header {
+	height: 110px;
+}
+
+.public-header .header-logo {
+	float: left;
+	margin-top: 40px;
+	
+}
+
+.public-header .header-logo a {
+	height: 54px;
+	width: 181px;
+	background: url("../images/index-header-logo.png"); /*这里的路径指的是CSS相对于图片的路径，不是图片相对于页面的路径哦！*/
+}
+
+.public-header .header-nav {
+    float: right;
+    font-size: 14px;
+}
+
+.public-header .header-nav .item {
+    float: left;
+    margin-top: 44px;
+    margin-left: 50px;
+}
+
+.public-header .header-nav a {
+	color: #3b3b3b;
+}
+
+/*底部*/
+.public-footer {
+	height: 217px;
+	padding-top: 100px;
+	background-color: #3b3b3b;
+}
+
+.public-footer .footer-col {
+	float: left;
+	width: 230px;
+	margin-right: 60px;
+	font-size: 16px;
+	color: #fff;
+    line-height: 1.8;
+}
+
+.public-footer .footer-col:last-child {
+	margin-right: 0; /*最后一栏没有右边距*/
+}
+
+.public-footer .footer-col .footer-logo {
+	width: 182px;
+	height: 55px;
+	margin-top: -16px;
+	background: url("../images/index-footer-logo.png");
+}
